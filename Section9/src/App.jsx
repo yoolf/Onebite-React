@@ -1,10 +1,11 @@
 import './App.css'
-import HookExam from './components/HookExam';
+import Exam from './components/Exam';
+
 
 function App() {
   return (
     <>
-      <HookExam />
+      <Exam />
     </>
   );
 }
