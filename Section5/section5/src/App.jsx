@@ -1,10 +1,15 @@
 import './App.css'
-import HookExam from './components/HookExam';
+// import { useState } from "react";
+// import HookExam from './components/HookExam';
+import Bulb from './components/Bulb';
 
 function App() {
+  // const [count, setCount] = useState(0);
+
   return (
     <>
-      <HookExam />
+      <Bulb />
+      {/* <HookExam /> */}
     </>
   );
 }
