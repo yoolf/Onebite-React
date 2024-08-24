@@ -40,7 +40,7 @@ function reducer(state, action) {
       );
     case "DELETE":
       // action.id와 동일하지 않은 item만 보임
-      return state.filter((item) => item.id !== action.id);
+      return state.filter((item) => String(item.id) !== String(action.id));
     default:
       return state;
   }
@@ -71,7 +71,7 @@ function App() {
     dispatch({
       type: "UPDATE",
       data: {
-        id: idRef.current++,
+        id,
         createdDate,
         emotionId,
         content,
